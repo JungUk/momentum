@@ -1,14 +1,3 @@
-const a = 5;
-const b = 3;
+const amIFat = false;
 
-let myName = "Lincoln";
-
-console.log(a+b);
-console.log(a*b);
-console.log(a/b);
-
-console.log("hello" + myName);
-
-myName = "nico";
-
-console.log("hello" + myName);
+console.log(amIFat);
