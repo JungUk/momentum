@@ -1,32 +1,22 @@
-
-function sayHello(nameOfPerson, age) {
-  console.log("Hello I'm " + nameOfPerson + ". " + age);
+const age = 96;
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
 }
 
-sayHello("dal", 10);
-sayHello("lynn", 20);
-sayHello("nico", 30);
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
 
 
-function plus(a, b) {
-  console.log(a + b);
-}
-
-function divide(a, b) {
-  console.log(a / b);
-}
-
-
-plus(1, 2);
-divide(10, 2);
-
-
-const player = {
-  name: "nico",
-  sayhello: function(PersonName) {
-    console.log("Hello " + PersonName);
+const calculator = {
+  plus: function(a, b) {
+    return a + b;
+  },
+  minus: function(a, b) {
+    return a - b;
   }
 };
 
-console.log(player.name);
-player.sayhello("Cola");
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 2);
+console.log(minusResult);
