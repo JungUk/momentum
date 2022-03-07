@@ -2,6 +2,10 @@ body {
   background-color: beige;
 }
 
-.asdf {
-  color: green;
+h1 {
+  color: cornflowerblue;
+}
+
+.active {
+  color: tomato;
 }
