@@ -4,8 +4,13 @@ body {
 
 h1 {
   color: cornflowerblue;
+  transition: color .5s ease-in-out;
 }
 
-.active {
+.clicked {
   color: tomato;
+}
+
+.sexy-font {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
