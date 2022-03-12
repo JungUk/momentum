@@ -17,13 +17,11 @@ function onLoginSubmit(event) {
 function onLinkClick(event) {
   event.preventDefault();
   console.dir(event);
-
-  // alert("clicked!");
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
+  greeting.innerText = `Hello ${username}`;  // submit하면 화면에 'Hello 이름' 저장
+  greeting.classList.remove(HIDDEN_CLASSNAME);  // 가려놨던 greeting 드러내기  
 }
 
 const savedUsername = localStorage.getItem("USERNAME_KEY");
