@@ -6,9 +6,19 @@ const toDoList = document.getElementById("todo-list");
 function handleToDoSubmit(event) {
   event.preventDefault();
   const newToDo = toDoInput.value;
-  console.log(toDoInput.value);
   toDoInput.value = "";
-  console.log(newToDo, toDoInput.value);
+  paintToDo(newToDo);
 }
 
+function paintToDo(newToDo) {
+  const li = document.createElement("li");
+  const span = document.createElement("span");
+  li.appendChild(span);
+  span.innerText = newToDo;
+  toDoList.appendChild(li);
+}
+
+
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+CRUD
