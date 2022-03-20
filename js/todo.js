@@ -10,15 +10,24 @@ function handleToDoSubmit(event) {
   paintToDo(newToDo);
 }
 
+function deleteToDo(event) {
+  const li = event.target.parentElement;
+  li.remove();
+}
+
 function paintToDo(newToDo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
   li.appendChild(span);
+
+  const button = document.createElement("button");
+  button.innerText = "🤮";
+  button.addEventListener("click", deleteToDo);
+  li.appendChild(button);
   span.innerText = newToDo;
   toDoList.appendChild(li);
+  
 }
 
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
-
-CRUD
